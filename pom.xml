@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>devops</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>devops</name>
@@ -24,21 +24,18 @@
 		<surefire.version>2.17</surefire.version>
 		<jacoco.version>0.7.9</jacoco.version>
 	</properties>
-	
-	<distributionManagement>
-    	    <repository>
-                <id>central</id>
-                <name>openshift03-releases</name>
-                <url>http://192.168.0.13:8081/artifactory/libs-release</url>
-    	    </repository>
-	</distributionManagement>
 
 	<distributionManagement>
-    	    <snapshotRepository>
-                <id>snapshots</id>
-                <name>openshift03-snapshots</name>
-                <url>http://192.168.0.13:8081/artifactory/libs-snapshot</url>
-    	    </snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>releases</name>
+			<url>http://35.154.250.148:8081/artifactory/libs-release-local/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<name>snapshots</name>
+			<url>http://35.154.250.148:8081/artifactory/libs-snapshot-local/</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
@@ -48,7 +45,6 @@
 		<tag>HEAD</tag>
 	</scm>
 
-	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
