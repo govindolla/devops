@@ -41,7 +41,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:govindolla/devops.git</connection>
 		<developerConnection>scm:git:git@github.com:govindolla/devops.git</developerConnection>
-		<url>git@github.com:keshavkummari/devops.git</url>
+		<url>git@github.com:govindolla/devops.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
